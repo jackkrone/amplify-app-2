@@ -1,0 +1,23 @@
+Notes:
+======
+
+* I finished this tutorial 2021/06/29
+* https://aws.amazon.com/getting-started/hands-on/build-react-app-amplify-graphql/
+* It was not up to date and missing some helpful information
+* Over the course of the tutorial I created an IAM user called user1 with the password user1
+	* I'm not 100% sure the password was user1, it may have been dumbness
+* I also created a user to sign into the app with called user1, with the password user1password#
+* When I created the storage service I used the bucket name myfirstbucket
+
+
+The following are the comments I left for Adele to get through the tutorial:
+----------------------------------------------------------------------------
+Module 1: Has you create a react app, connect it with a GitHub repo, and then link that repo to AWS amplify. Pretty straightforward. The final step on this module is just to show how Amplify will automatically deploy updates to your app when you push changes to your GitHub repo.
+
+Module 2: In step 2 of this module you need to run “amplify configure” from the command line. It asks you to set up a user. This part is not explained in the tutorial. Essentially, you have to create an initial user for your app with a username and password. The prompts to do so will show up in terminal after you run the command. In step 3 you set up a backend for your app. Your default browser must be set to chrome before you do step 3 or the local setup commands will not work. You have to have the amplify backend environment admin UI open before you run the local setup commands as well. If you don’t, then when you run the command you will be taken to a login page that you cannot log into with your AWS sign in information. This is a very confusing aspect of the tutorial.
+
+Module 3: The step 6 directions are not correct. Signing up (i.e. clicking create account) does not automatically sign you in. You need to create an account. I thought I could use the user info that I created in module 2 but this did not work. I created a new dummy account a username and password. After creating it you can sign in to the app. In the last part of step 7 you point the front end to the back end. The image shown here is not up to date with the current amplify UI, but I think you will be able to figure it out. Also note that the backend will probably be called staging, not dev.
+
+Module 4: Things start to get really hair here. The tutorial wants you to incorporate a simple api called notesapp. It appears that since the tutorial was written, many of the variables in the notesapp code have been renamed from including the word Notes to including the word Todos. Steps 1 and 3 tell you to include incorrect code in certain files. I have the correct code and can share it when necessary. Upon completion of this module you are asked to run the app locally. I did that successfully and then pushed the changes to my GitHub repo to run the updated app on Amplify. This failed. We can look through the error logs together on this if the same thing happens with you.
+
+Module 5: More code issues like in module 4. Can share with you when need be.
